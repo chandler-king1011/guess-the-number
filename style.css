@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(177, 138, 81);
+    margin: 0;
+    display: grid;
+    grid-template-rows: 75px, 1fr;
+    grid-gap: 50px;
+}
+
+.heading {
+    background-color: maroon;
+    color: rgb(177, 138, 81);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-wrapper > .form-title {
+    font-size: 3em;
+    font-weight: 600;
+    color: maroon;
+    margin-bottom: 20px;
+}
+
+.form-wrapper > form {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-wrapper > .form > .form-input {
+    width: 30vw;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5em;
+    color: #800000;;
+}
+
+
+.form-wrapper > .form > .form-input:focus {
+    outline: none;
+    background-color:  #b18a51;
+    box-shadow: 0px 5px 29px 0px rgba(88,0,0,1);
+}
+
+.form-wrapper > .form > .form-input::placeholder {
+    color: #580000;
+}
+
+.form-wrapper > .form > .form-button {
+    width: 30vw;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    color: #b18a51;
+    background-color: #800000;
+    transition: ease-in-out 0.2s;
+}
+
+.form-wrapper > .form > .form-button:hover {
+    box-shadow: 0px 5px 29px 0px rgba(0,0,0,0.5);
+}
+
+.form-wrapper > .form > .form-button:focus {
+    outline: none;
+}
+
+.form-wrapper > .form-response {
+    text-align: center;
+    color: #580000;
+    width: 30vw;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.form-response-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    list-style-type: none;
+    padding-inline-start: 0px;
+
+}
+
+.form-response-list > li {
+    width: 30vw;
+    background-color:#800000;
+    color: #b18a51;
+    text-align: center;
+    border-bottom: 1px solid #580000;
+    font-size: 1.2em;
+    font-weight: 600;
+}
