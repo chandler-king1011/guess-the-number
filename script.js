@@ -1,4 +1,4 @@
-let numberToGuess = Math.floor(Math.random() * 101);
+let numberToGuess = Math.floor(Math.random() * 100) + 1;
 const formResponse = document.querySelector(".form-response"); 
 const input = document.querySelector(".form-input");
 const form = document.querySelector(".form");
@@ -35,6 +35,7 @@ const checkGuess = (e) => {
     } else {
         responseList.innerHTML = "";
     }
+    input.value = "";
 }
 
 const resetGame = () => {
