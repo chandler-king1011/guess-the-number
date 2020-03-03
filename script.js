@@ -19,7 +19,7 @@ const checkGuess = (e) => {
         guessArr.unshift(guess);
     
     } else if (guess == numberToGuess) {
-        let correct = `<div class="form-response correct">You got it! I have another number make a guess to keep playing.</div>`
+        let correct = `<div class="form-response correct">You got it! The number was ${numberToGuess}. I have another number make a guess to keep playing.</div>`
         formResponse.innerHTML = correct;
         guessArr = [];
         numberToGuess = Math.floor(Math.random() * 101);
